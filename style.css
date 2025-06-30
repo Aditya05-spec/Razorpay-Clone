@@ -10,7 +10,7 @@
     left: 16rem;
     width: 100%;
     height: 60px;
-    transition: all 300ms ease;
+    transition: all 500ms ease;
     z-index: 200;
 }
 .cardHover:hover::before {
@@ -23,6 +23,39 @@
 }
 
  .cardHover:hover .cardImageHover {
+    background-image: linear-gradient(
+        30.55deg,
+        #6ac7ff 11.05%,
+        #148aff 90.09%
+    );
+    box-shadow: 0px 2px 22px rgb(202 202 202 / 25%);
+}
+
+.cardHover2::before {
+    content: "";
+    position: absolute;
+    background-image: url(./images/features2-wave.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+    bottom: 0;
+    right: 0;
+    left: 15rem;
+    width: 100%;
+    height: 60px;
+    transition: all 300ms ease;
+    z-index: 200;
+}
+.cardHover2:hover::before {
+    opacity: 1;
+}
+
+.cardHover2:hover {
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.1));   
+    /* stroke-opacity: 0 !important; */
+}
+
+ .cardHover2:hover .cardImageHover2 {
     background-image: linear-gradient(
         30.55deg,
         #6ac7ff 11.05%,
